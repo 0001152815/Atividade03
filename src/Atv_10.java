@@ -51,14 +51,6 @@ public class Atv_10 {
         // Arrays.toString() é um método prático para exibir vetores
         System.out.println(Arrays.toString(vetorC));
 
-        // Se preferir exibir com um loop:
-        /*
-        for (int i = 0; i < vetorC.length; i++) {
-            System.out.print(vetorC[i] + " ");
-        }
-        System.out.println(); // Pular linha no final
-        */
-
         // Fechar o scanner
         scanner.close();
     }
