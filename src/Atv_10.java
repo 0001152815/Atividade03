@@ -35,15 +35,11 @@ public class Atv_10 {
         // 4. Criar o terceiro vetor (vetorC)
 
         // Copia os 5 valores do vetorA para as primeiras 5 posições do vetorC
-        for (int i = 0; i < TAMANHO; i++) {
-            vetorC[i] = vetorA[i];
-        }
+        System.arraycopy(vetorA, 0, vetorC, 0, TAMANHO);
 
         // Copia os 5 valores do vetorB para as 5 posições restantes do vetorC
         // (Note que o índice de 'vetorC' começa de 'TAMANHO')
-        for (int i = 0; i < TAMANHO; i++) {
-            vetorC[i + TAMANHO] = vetorB[i];
-        }
+        System.arraycopy(vetorB, 0, vetorC, 5, TAMANHO);
 
         // 5. Exibir o vetor resultante
         System.out.println("\n--- Vetor Resultante (Vetor C) ---");
